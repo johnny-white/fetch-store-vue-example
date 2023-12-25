@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "Vue.volar",
-    "christian-kohler.path-intellisense"
+    "christian-kohler.path-intellisense",
+    "dbaeumer.vscode-eslint"
   ]
 }
