@@ -11,16 +11,16 @@ const getters = {
 };
 
 const mutations = {
-  GET_PRODUCTS_REQUEST: (state) => {
+  'GET_PRODUCTS_REQUEST': (state) => {
     state.productsLoading = true;
   },
 
-  GET_PRODUCTS_SUCCESS: (state, payload) => {
+  'GET_PRODUCTS_SUCCESS': (state, payload) => {
     state.products = payload;
     state.productsLoading = false;
   },
 
-  GET_PRODUCTS_FAILURE: (state) => {
+  'GET_PRODUCTS_FAILURE': (state) => {
     state.products = [];
     state.productsLoading = false;
   },
