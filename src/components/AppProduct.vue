@@ -1,10 +1,16 @@
 <template>
   <div class="app-product">
-    <h3 class="app-product__title">{{ product.title }}</h3>
+    <h3 class="app-product__title">
+      {{ product.title }}
+    </h3>
 
-    <p class="app-product__description">{{ product.description }}</p>
+    <p class="app-product__description">
+      {{ product.description }}
+    </p>
 
-    <p class="app-product__price">{{ product.price }}$</p>
+    <p class="app-product__price">
+      {{ product.price }}$
+    </p>
   </div>
 </template>
 

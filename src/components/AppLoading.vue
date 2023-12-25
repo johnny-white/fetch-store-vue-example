@@ -1,6 +1,6 @@
 <template>
   <div class="app-loading">
-    <div class="app-loading__inner"></div>
+    <div class="app-loading__inner" />
   </div>
 </template>
 

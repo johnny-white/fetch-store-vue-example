@@ -1,8 +1,11 @@
 <template>
-  <AppLoading v-if="productsLoading" />
+  <app-loading v-if="productsLoading" />
 
-  <div v-else class="app-container">
-    <AppProduct
+  <div
+    v-else
+    class="app-container"
+  >
+    <app-product
       v-for="product in products"
       :key="product.id"
       :product="product"
@@ -22,15 +25,15 @@ export default {
     AppProduct,
   },
 
-  mounted() {
-    this.getProducts();
-  },
-
   computed: {
     ...mapGetters({
       products: 'products/products',
       productsLoading: 'products/productsLoading',
     }),
+  },
+
+  mounted() {
+    this.getProducts();
   },
 
   methods: {
