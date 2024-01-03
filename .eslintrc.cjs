@@ -21,5 +21,6 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'quotes': ['error', 'single', { 'avoidEscape': true }],
     'arrow-parens': ['error', 'always'],
+    'semi': ['error', 'always'],
   },
 };
