@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axiosInstance from '@/plugins/axios';
 
 const state = {
   products: [],
@@ -31,7 +31,7 @@ const actions = {
     store.commit('GET_PRODUCTS_REQUEST');
 
     try {
-      const data = await axios.get('https://dummyjson.com/products?limit=16');
+      const data = await axiosInstance.get('products');
 
       store.commit('GET_PRODUCTS_SUCCESS', data.data.products);
     } catch (error) {
